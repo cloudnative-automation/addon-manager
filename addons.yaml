@@ -15,6 +15,6 @@ spec:
         - values.yaml
         - values/aks/infra.yaml
     repoURL: https://cloudnative-automation.github.io/addon-manager/repo
-    targetRevision: 0.0.2
+    targetRevision: 0.1.*
   syncPolicy:
     automated: {}
