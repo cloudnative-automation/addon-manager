@@ -1,11 +1,24 @@
 apiVersion: v1
 entries:
+  addonsMgr:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2024-01-25T02:46:26.254326+08:00"
+    description: Cluster Addons Manager
+    digest: 1135fc324ecfa9dc9a4efe1b8b2ef0456d6145d5848f6f4bd3b1ddc071327e0a
+    kubeVersion: '>=1.20.0-0'
+    maintainers:
+    - name: Pan, Ye
+    name: addonsMgr
+    urls:
+    - https://raw.githubusercontent.com/cloudnative-automation/addon-manager/main/repo/addonsMgr-0.0.3.tgz
+    version: 0.0.3
   addonsmgr:
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-01-25T02:28:14.391424+08:00"
+    created: "2024-01-25T02:46:26.254802+08:00"
     description: Cluster Addon Manager
-    digest: d17e9c08defffd64ae94633c7f516635dbf1a799d1d1e076ef0bf1b1a653f301
+    digest: ab0cc443aef72dca491b9c973578a860837d8ba7b839ff7311729526ca53a2e9
     kubeVersion: '>=1.20.0-0'
     maintainers:
     - name: Pan, Ye
@@ -15,7 +28,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-01-25T02:28:14.391155+08:00"
+    created: "2024-01-25T02:46:26.254588+08:00"
     description: Cluster Addon Manager
     digest: d9778a2612724e468e3b3b1b66ee36070268366dd688a199f68b2fe79eef682f
     kubeVersion: '>=1.20.0-0'
@@ -25,4 +38,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/cloudnative-automation/addon-manager/main/repo/addonsmgr-0.0.1.tgz
     version: 0.0.1
-generated: "2024-01-25T02:28:14.390458+08:00"
+generated: "2024-01-25T02:46:26.253943+08:00"
