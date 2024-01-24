@@ -7,7 +7,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: {{ .Values.addons.namespaces }}
+    namespace: {{ $addon.namespace | default "addons-system" }}
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -16,7 +16,7 @@ spec:
       valueFiles:
         - values.yaml
     repoURL: {{ $addon.repoURL}}
-    targetRevision: {{ $addon.repoURL }}
+    targetRevision: {{ $addon.targetVersion }}
   syncPolicy:
     automated: {}
   {{- end }}
