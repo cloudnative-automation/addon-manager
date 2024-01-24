@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: addons
+  namespace: argocd
+spec:
+  destination:
+    namespace: addons-system
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: addonsmgr
+    helm:
+      valueFiles:
+        - values.yaml
+        - values/aks/infra.yaml
+    repoURL: https://cloudnative-automation.github.io/addon-manager/repo
+    targetRevision: 0.0.2
+  syncPolicy:
+    automated: {}
