@@ -1,0 +1,25 @@
+---
+clusterURL: 127.0.0.1
+
+addons:
+
+  namespaces:
+    default: addons-system
+
+  grafana:
+    enabled: false
+    names:
+      app: grafana
+      chart: grafana
+    repoURL: https://grafana.github.io/helm-charts
+    targetVersion: 7.2.4
+  
+  ingressNginx:
+    enabled: false
+    names:
+      app: ingress-nginx
+      chart: ingress-nginx/ingress-nginx
+    repoURL: https://kubernetes.github.io/ingress-nginx
+    targetVersion: 4.9.0
+
+

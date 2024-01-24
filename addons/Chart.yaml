@@ -1,0 +1,8 @@
+apiVersion: v2
+description: Cluster Addon Manager
+kubeVersion: '>=1.20.0-0'
+maintainers:
+- name: Pan, Ye
+name: addonsmgr
+version: 0.0.1
+appVersion: 0.0.0
